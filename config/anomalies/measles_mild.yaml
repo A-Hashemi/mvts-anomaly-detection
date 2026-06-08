@@ -46,23 +46,23 @@ dataset:
 
         ###mpox
         #fever:
-        #  adults: 0.008
-        #  children: 0.008
+        #  adults: 0.0008
+        #  children: 0.0008
         #rash:
-        #  adults: 0.006
-        #  children: 0.006
+        #  adults: 0.0006
+        #  children: 0.0006
         
-        #Skin_change: 0.006
-        #Leg_and_foot_ulcers: 0.005
+        #Skin_change: 0.0006
+        #Leg_and_foot_ulcers: 0.0005
 
 
         ###COVID-19
         #fever:
-        #  adults: 0.009
-        #  children: 0.009
+        #  adults: 0.0009
+        #  children: 0.0009
         #cough:
-        #  adults: 0.008
-        #  children: 0.008
+        #  adults: 0.0008
+        #  children: 0.0008
         #respiratory_problems:
-        #  adults: 0.009
-        #  children: 0.009
+        #  adults: 0.0009
+        #  children: 0.0009
