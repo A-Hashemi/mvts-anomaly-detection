@@ -1,0 +1,5 @@
+name: pca
+model:
+  name: pca
+  hparams:
+    n_components: 5

@@ -1,0 +1,14 @@
+headstart_size: 365
+name: lstm_autoencoder
+hparams:
+  input_dim: 193  # Adjust according to your data
+  hidden_dim: 64
+  seq_len: 5  # Length of sequences for LSTM
+  learning_rate: 0.001
+  batch_size: 64
+  train_ratio: 0.7
+  val_ratio: 0.1
+sequence_method: 'sliding_window'  # Choose from 'sliding_window', 'fixed_length_overlap', etc.
+trainer:
+  max_epochs: 10
+  #gpus: 0  # Set to 1 if using GPU

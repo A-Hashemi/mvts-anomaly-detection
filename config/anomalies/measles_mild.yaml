@@ -1,0 +1,68 @@
+dataset:
+  name: "1177"
+  symptom_anomalies:
+    enabled: false
+  systemic_anomalies:
+    enabled: true
+    model: sir_measles
+    injection_start_index: 500   
+    params:
+      population:
+        adults: 8000000   
+      initial_conditions:
+        adults:
+          susceptible: 7999850         #4000000      #6000000 #7999850  
+          exposed: 100     
+          infected_stage1: 30     
+          infected_stage2: 15      
+          infected_stage3: 5        
+          recovered: 0     #3999850  #1999850     #0
+      transmission_rates:
+        adults: 0.43
+      progression_rates:
+        adults:
+          exposed_to_infected: 0.1         #0.1  # 1/10 days (average incubation period)
+          infected_stage1_to_stage2: 0.25    # 0.25  # 1/4 days (prodromal phase)
+          infected_stage2_to_stage3: 0.333      #0.333  # 1/3 days (early rash to late rash)
+          infected_stage3_to_recovered: 0.143     #0.143  # 1/7 days (rash duration)
+      simulation_duration:
+        start_day: 0
+        end_day: 100
+      symptom_probabilities:
+        ###Measels
+        fever:
+          adults: 0.0009
+          children: 0.0009
+        cough:
+          adults: 0.0008
+          children: 0.0008
+        conjunctivitis:
+          adults: 0.0008
+          children: 0.0008
+        rash:
+          adults: 0.0009
+          children: 0.0009
+
+
+        ###mpox
+        #fever:
+        #  adults: 0.008
+        #  children: 0.008
+        #rash:
+        #  adults: 0.006
+        #  children: 0.006
+        
+        #Skin_change: 0.006
+        #Leg_and_foot_ulcers: 0.005
+
+
+        ###COVID-19
+        #fever:
+        #  adults: 0.009
+        #  children: 0.009
+        #cough:
+        #  adults: 0.008
+        #  children: 0.008
+        #respiratory_problems:
+        #  adults: 0.009
+        #  children: 0.009

@@ -1,0 +1,11 @@
+batch_size: 32
+num_epochs: 10
+learning_rate: 0.001
+optimizer: adam
+loss: mse
+scheduler: step
+scheduler_step_size: 20
+scheduler_gamma: 0.1
+early_stopping:
+  patience: 10
+  min_delta: 0.001

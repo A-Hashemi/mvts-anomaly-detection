@@ -1,0 +1,5 @@
+# Dataset paths are relative to the repository root.
+# Replace these files with your own data if needed.
+path: data/synthetic_dataset_daily_aggregated.parquet.gzip
+translation_path: data/translation_df.csv
+

@@ -1,0 +1,26 @@
+defaults:
+  #- model: lstm_autoencoder
+  #- model: vanilla_autoencoder
+  #- model: variational_autoencoder
+  - model: anomaly_transformer
+  # - model: pca
+  - dataset: dataset
+  - anomalies: measles_mild
+  - trainer: null  # This will be overridden when a deep learning model is selected
+  - _self_
+
+experiment:
+  name: "Anomaly Detection Benchmark"
+  project: "Anomaly"
+  mode: "offliune"
+  results_path: ".mvts_anomalydetection/evaluation_example.pkl"
+
+features_to_plot:
+  - 'Fever_-_adult'
+  - 'Fever_-_child'
+  - 'Cough_-_adult'
+  - 'Cough_-_child'
+  - 'Eye_problems_-_adult'
+  - 'Eye_problems_-_children'
+  - 'Rash_-_adult'
+  - 'Rash_-_children'
