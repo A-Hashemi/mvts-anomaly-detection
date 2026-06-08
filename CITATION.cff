@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "MVTS Anomaly Detection for Online Outbreak Surveillance"
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+authors:
+  - family-names: Hashemi
+    given-names: Atiye
+year: 2026
+license: MIT
+repository-code: "https://github.com/YOUR-USERNAME/YOUR-REPOSITORY"

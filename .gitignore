@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter / OS
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Experiment outputs and logs
+wandb/
+outputs/
+logs/
+lightning_logs/
+*.ckpt
+*.pt
+*.pth
+
+# Hydra outputs
+.multirun/
+outputs/
+
+# Environment / secrets
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/

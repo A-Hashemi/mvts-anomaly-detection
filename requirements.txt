@@ -1,0 +1,12 @@
+numpy
+pandas
+hydra-core
+omegaconf
+stumpy
+matplotlib
+scikit-learn
+scipy
+pyarrow
+rich
+lightning
+wandb
