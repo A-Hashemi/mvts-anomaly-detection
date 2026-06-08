@@ -2,9 +2,9 @@ headstart_size: 365
 name: anomaly_transformer    # Transformer AE
 hparams:
   input_dim: 193
-  embed_dim: 20      # This must be divisible by num_heads
-  num_heads: 64       # So 64 % 8 == 0 — OK
   hidden_dim: 64
+  nhead: 4
+  num_layers: 2
   seq_len: 14
   learning_rate: 0.001
   batch_size: 64
@@ -14,4 +14,3 @@ sequence_method: sliding_window
 
 trainer:
   max_epochs: 10
-  # gpus: 0
