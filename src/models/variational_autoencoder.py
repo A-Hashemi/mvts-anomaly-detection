@@ -53,7 +53,7 @@ class VariationalAutoencoder(ReconstructionAnomalyDetector):
 
         return recon_x  # Now returns the same shape as Vanilla AE
 
-    def recon_loss(self, recon_x, x):
+    def compute_loss(self, recon_x, x):
         """
         Computes the VAE loss (Reconstruction loss + KL divergence).
         Uses `self.mu` and `self.logvar` stored in forward() to avoid changing training logic.
