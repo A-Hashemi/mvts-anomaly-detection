@@ -62,7 +62,7 @@ def evaluate_detection(
         true_anomalies=true_anomalies,
         detected_anomalies=detected_anomalies,
         modified_data=modified_data,
-        eps_values=[10, 20, 30, 40, 50],  
+        eps_values=[10, 20, 30, 40],  
         min_samples=1,
         logger=logger,  
         verbose=False
