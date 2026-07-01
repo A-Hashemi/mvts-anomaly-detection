@@ -2,6 +2,7 @@ import json
 import os
 
 import hydra
+import random
 import pytorch_lightning as pl
 import torch
 import numpy as np
@@ -31,6 +32,13 @@ def run_experiment(cfg):
     """
     print("Loaded configuration:")
     print(OmegaConf.to_yaml(cfg))
+
+    seed = cfg.get("seed", 42)
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    pl.seed_everything(seed, workers=True)
 
     wandb_logger = WandbLogger(
         name=cfg.experiment.name,
