@@ -125,7 +125,7 @@ def run_experiment(cfg):
                 online_sequences = data_module.create_sequences(online_batch_scaled)
                 if not online_sequences.any():
                     break 
-                #model.eval()
+                model.eval()
                 with torch.no_grad():
                     # update the threshold:
                     # Test the model
