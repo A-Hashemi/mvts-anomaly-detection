@@ -60,7 +60,7 @@ class AnomalyTransformer(ReconstructionAnomalyDetector):
         Returns:
             Reconstructed x: [batch_size, seq_len, input_dim]
         """
-        self.train()
+        # self.train()
         batch_size, seq_len, _ = x.size()
 
         # Transform input
