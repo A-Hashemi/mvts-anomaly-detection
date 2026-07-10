@@ -73,6 +73,10 @@ class ReconstructionAnomalyDetector(pl.LightningModule):
         x_hat = self(x)
         loss = self.compute_loss(x, x_hat)
         self.log('val_loss', loss)
+        
+    def on_test_epoch_start(self) -> None:
+    """Clear outputs collected during any previous test run."""
+    self.test_outputs.clear()
 
     def test_step(self, batch: tuple, batch_idx: int) -> None:
         """
